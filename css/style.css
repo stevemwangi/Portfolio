@@ -53,13 +53,18 @@ img {
 .column-1 {
   margin-right: 1.5rem;
 }
-.column- {
+.column-2 {
   margin-left: 1.5rem;
+  position: relative;
 }
 .image {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.z-index {
+  position: relative;
+  z-index: 2;
 }
 
 /** Global Styles End Here*/
@@ -71,6 +76,7 @@ header {
   overflow: hidden;
   position: relative;
 }
+
 nav {
   width: 100%;
   position: relative;
@@ -123,10 +129,11 @@ nav .container {
 }
 
 .header-title {
-  font-size: 3.6rem;
+  font-size: 3.3rem;
   line-height: 0.8;
   color: var(--dark-one);
   padding: 0.2rem;
+  font-weight: 800;
 }
 
 .header-content .text {
@@ -151,6 +158,20 @@ nav .container {
   max-width: 750px;
   border-radius: 1.75rem;
 }
+.points {
+  position: absolute;
+  opacity: 0.29;
+}
+header .points1 {
+  width: 420px;
+  bottom: -75px;
+  left: -150px;
+}
+header .points2 {
+  width: 70%;
+  left: 70%;
+  top: 65%;
+}
 .overlay {
   position: absolute;
   width: 100%;
@@ -158,6 +179,54 @@ nav .container {
   overflow: hidden;
   top: 0;
   left: 0;
+}
+.overlay .shape {
+  width: initial;
+  opacity: 0.13;
+  position: absolute;
+}
+.overlay.overlay-lg .shape {
+  height: 55px;
+}
+.overlay.overlay-lg .shape.wave {
+  height: initial;
+  width: 88px;
+}
+.overlay.overlay-lg .shape.xshape {
+  height: 37px;
+}
+header .square {
+  right: 68%;
+  top: 75%;
+}
+header .triangle {
+  right: 8%;
+  top: 9%;
+  padding-top: 12px;
+}
+header .xshape {
+  right: 4%;
+  bottom: 50%;
+}
+header .half-circle1 {
+  right: 49%;
+  bottom: 83%;
+}
+header .half-circle2 {
+  left: 2%;
+  top: 68%;
+}
+header .wave1 {
+  left: 20%;
+  bottom: 75%;
+}
+header .wave2 {
+  right: 55%;
+  bottom: 8%;
+}
+header .circle {
+  left: 38%;
+  top: 35%;
 }
 .letters {
   position: absolute;
